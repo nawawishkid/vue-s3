@@ -28,7 +28,7 @@ jobs:
       - uses: jakejarvis/s3-sync-action@master
         name: Upload App to S3 Bucket
         with:
-          args: --follow-symlinks --delete
+          args: --acl public-read --follow-symlinks --delete
         env:
           AWS_S3_BUCKET: ${{ env.AWS_S3_BUCKET_NAME }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
