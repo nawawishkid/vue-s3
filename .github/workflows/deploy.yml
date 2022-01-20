@@ -35,6 +35,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "ap-southeast-1"
           SOURCE_DIR: "dist"
+          DEST_DIR: "vue-s3-example"
       # - name: Create CloudFront Cache Invalidation
       #   uses: chetan/invalidate-cloudfront-action@master
       #   env:
